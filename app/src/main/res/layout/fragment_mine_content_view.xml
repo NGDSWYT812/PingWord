@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbarSize="0dp"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:id="@+id/rl_rj"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/grid_5"
+        android:layout_height="@dimen/grid_50">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/grid_10"
+            android:layout_toLeftOf="@+id/iv_rj"
+            android:drawableLeft="@drawable/icon_rj"
+            android:drawablePadding="@dimen/grid_5"
+            android:gravity="center_vertical"
+            android:text="推荐应用"
+            android:textColor="@color/text_color_tv1"
+            android:textSize="@dimen/grid_14"/>
+
+        <ImageView
+            android:id="@+id/iv_rj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/grid_10"
+            android:scaleType="centerInside"
+            android:src="@drawable/array_left"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/LineStyle"
+        android:layout_marginLeft="@dimen/grid_10"
+        android:layout_marginRight="@dimen/grid_10"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_tongji"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_50">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/grid_10"
+            android:layout_toLeftOf="@+id/iv_tj"
+            android:drawableLeft="@drawable/tongji"
+            android:drawablePadding="@dimen/grid_5"
+            android:gravity="center_vertical"
+            android:text="易错统计"
+            android:textColor="@color/text_color_tv1"
+            android:textSize="@dimen/grid_14"/>
+
+        <ImageView
+            android:id="@+id/iv_tj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/grid_10"
+            android:scaleType="centerInside"
+            android:src="@drawable/array_left"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/LineStyle"
+        android:layout_marginLeft="@dimen/grid_10"
+        android:layout_marginRight="@dimen/grid_10"/>
+
+    <RelativeLayout
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_50">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/grid_10"
+            android:layout_toLeftOf="@+id/iv_cz"
+            android:drawableLeft="@drawable/reset"
+            android:drawablePadding="@dimen/grid_5"
+            android:gravity="center_vertical"
+            android:text="重置闯关"
+            android:textColor="@color/text_color_tv1"
+            android:textSize="@dimen/grid_14"/>
+
+        <ImageView
+            android:id="@+id/iv_cz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/grid_10"
+            android:scaleType="centerInside"
+            android:src="@drawable/array_left"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/LineStyle"
+        android:layout_marginLeft="@dimen/grid_10"
+        android:layout_marginRight="@dimen/grid_10"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_shenci"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_50">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/grid_10"
+            android:layout_toLeftOf="@+id/iv_sc"
+            android:drawableLeft="@drawable/shengci"
+            android:drawablePadding="@dimen/grid_5"
+            android:gravity="center_vertical"
+            android:text="生词本"
+            android:textColor="@color/text_color_tv1"
+            android:textSize="@dimen/grid_14"/>
+
+        <ImageView
+            android:id="@+id/iv_sc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/grid_10"
+            android:scaleType="centerInside"
+            android:src="@drawable/array_left"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/LineStyle"
+        android:layout_marginLeft="@dimen/grid_10"
+        android:layout_marginRight="@dimen/grid_10"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_faceback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_50"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/grid_10"
+            android:layout_toLeftOf="@+id/iv_fb"
+            android:drawableLeft="@drawable/faceback"
+            android:drawablePadding="@dimen/grid_5"
+            android:gravity="center_vertical"
+            android:text="意见反馈"
+            android:textColor="@color/text_color_tv1"
+            android:textSize="@dimen/grid_14"/>
+
+        <ImageView
+            android:id="@+id/iv_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/grid_10"
+            android:scaleType="centerInside"
+            android:src="@drawable/array_left"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/LineStyle"
+        android:layout_marginLeft="@dimen/grid_10"
+        android:layout_marginRight="@dimen/grid_10"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_upadte"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_50"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/grid_10"
+            android:layout_toLeftOf="@+id/iv_up"
+            android:drawableLeft="@drawable/update"
+            android:drawablePadding="@dimen/grid_5"
+            android:gravity="center_vertical"
+            android:text="版本更新"
+            android:textColor="@color/text_color_tv1"
+            android:textSize="@dimen/grid_14"/>
+
+        <ImageView
+            android:id="@+id/iv_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/grid_10"
+            android:scaleType="centerInside"
+            android:src="@drawable/array_left"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/LineStyle"
+        android:layout_marginLeft="@dimen/grid_10"
+        android:layout_marginRight="@dimen/grid_10"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_50">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/grid_10"
+            android:layout_toLeftOf="@+id/iv_ab"
+            android:drawableLeft="@drawable/about"
+            android:drawablePadding="@dimen/grid_5"
+            android:gravity="center_vertical"
+            android:text="关于&#38;帮助"
+            android:textColor="@color/text_color_tv1"
+            android:textSize="@dimen/grid_14"/>
+
+        <ImageView
+            android:id="@+id/iv_ab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/grid_10"
+            android:scaleType="centerInside"
+            android:src="@drawable/array_left"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/LineStyle"
+        android:layout_marginLeft="@dimen/grid_10"
+        android:layout_marginRight="@dimen/grid_10"/>
+
+    <TextView
+        android:id="@+id/tv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_50"
+        android:layout_marginLeft="@dimen/grid_10"
+        android:layout_toLeftOf="@+id/iv_sc"
+        android:drawableLeft="@drawable/logout"
+        android:drawablePadding="@dimen/grid_5"
+        android:gravity="center_vertical"
+        android:text="退出应用"
+        android:textColor="@color/text_color_tv1"
+        android:textSize="@dimen/grid_14"/>
+
+    <View
+        style="@style/LineStyle"
+        android:layout_marginLeft="@dimen/grid_10"
+        android:layout_marginRight="@dimen/grid_10"/>
+</LinearLayout>

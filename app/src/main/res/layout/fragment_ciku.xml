@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_45">
+
+        <ping.Lib.layout.RoundRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/grid_5"
+            app:rv_cornerRadius="@dimen/grid_5"
+            app:rv_strokeColor="@color/devide_line"
+            app:rv_strokeWidth="1dp">
+
+            <EditText
+                android:id="@+id/edit_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/grid_10"
+                android:background="@null"
+                android:drawableLeft="@drawable/search"
+                android:drawablePadding="@dimen/grid_5"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="请输入您要查找的单词"
+                android:inputType="text"
+                android:singleLine="true"
+                android:layout_toLeftOf="@+id/iv_delete"
+                android:textColor="@color/text_color_tv1"
+                android:textColorHint="@color/text_color_tv3"
+                android:textSize="@dimen/grid_14"/>
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="@dimen/grid_30"
+                android:layout_height="@dimen/grid_30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/grid_5"
+                android:layout_marginRight="@dimen/grid_5"
+                android:scaleType="centerInside"
+                android:src="@drawable/delete"/>
+        </ping.Lib.layout.RoundRelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:layout_marginTop="@dimen/grid_5"
+        android:visibility="gone"
+        android:scrollbars="none"/>
+
+    <LinearLayout
+        android:id="@+id/layoutEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_none"/>
+
+        <TextView
+            android:id="@+id/emptycontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/grid_16"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:textColor="@color/text_color_tv3"
+            android:textSize="@dimen/grid_14"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/grid_50"
+              android:background="@color/app_main_bg"
+              android:clickable="true"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:padding="@dimen/grid_20">
+
+    <RelativeLayout
+        android:id="@+id/pic1Layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_50"
+        android:layout_marginBottom="@dimen/grid_10"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_kong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mine_top"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/grid_10"
+        android:scaleType="centerInside"
+        android:src="@drawable/normal"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="退出应用"
+        android:textColor="@color/text_color_tv1"
+        android:textSize="@dimen/grid_16"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grid_20"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ping.Lib.layout.RoundTextView
+            android:id="@+id/ok"
+            android:layout_width="@dimen/grid_90"
+            android:layout_height="@dimen/grid_35"
+            android:gravity="center"
+            android:padding="@dimen/grid_5"
+            android:text="确定"
+            android:textColor="@color/mainColor"
+            android:textSize="@dimen/grid_14"
+            app:rv_cornerRadius="@dimen/grid_5"
+            app:rv_strokeColor="@color/mainColor"
+            app:rv_strokeWidth="@dimen/grid_1"/>
+
+        <ping.Lib.layout.RoundTextView
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/grid_90"
+            android:layout_height="@dimen/grid_35"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/mainColor"
+            android:textSize="@dimen/grid_14"
+            app:rv_cornerRadius="@dimen/grid_5"
+            app:rv_strokeColor="@color/mainColor"
+            app:rv_strokeWidth="@dimen/grid_1"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#cc56ABE4">
+
+    <TextView
+        android:id="@+id/tv_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_35"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/grid_10"
+        android:textColor="@color/white"
+        android:textSize="@dimen/grid_20"
+        android:textAllCaps="true"
+        android:textStyle="bold"/>
+</RelativeLayout>

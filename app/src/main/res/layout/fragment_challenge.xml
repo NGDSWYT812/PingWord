@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/grid_10"
+        android:drawableLeft="@drawable/notification"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/grid_5"
+        android:layout_margin="@dimen/grid_5"
+        android:textColor="@color/mainColor"
+        android:singleLine="true"
+        android:text="在规定的时间内翻译出单词的汉语，根据正确率评分，每一个等级会随着难度加强！"/>
+    <GridView
+        android:id="@+id/gv_challenge"
+        android:layout_below="@+id/tv_notification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:layout_marginLeft="@dimen/grid_10"
+        android:layout_marginRight="@dimen/grid_10"
+        android:horizontalSpacing="@dimen/grid_10"
+        android:verticalSpacing="@dimen/grid_10"
+        android:cacheColorHint="@android:color/transparent"/>
+</RelativeLayout>

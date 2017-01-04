@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ping.Lib.layout.RoundRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_160"
+        app:rv_cornerRadius="@dimen/grid_5"
+        app:rv_strokeColor="@color/devide_line"
+        app:rv_strokeWidth="1dp">
+
+        <ImageView
+            android:id="@+id/iv_lock"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/grid_160"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/lock"/>
+        <TextView
+            android:id="@+id/tv_good"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/grid_10"
+            android:singleLine="true"
+            android:drawablePadding="@dimen/grid_5"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/grid_14"
+            android:visibility="gone"
+            android:textColor="@color/white"/>
+    </ping.Lib.layout.RoundRelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_guan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/grid_5"
+        android:paddingBottom="@dimen/grid_10"
+        android:singleLine="true"
+        android:textSize="@dimen/grid_16"
+        android:textColor="@color/text_color_tv0"/>
+</LinearLayout>

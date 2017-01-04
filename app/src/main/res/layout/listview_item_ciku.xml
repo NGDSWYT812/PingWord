@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="abssddf"
+        android:layout_marginTop="@dimen/grid_7"
+        android:layout_marginLeft="@dimen/grid_10"
+        android:textColor="@color/text_color_tv0"
+        android:textSize="@dimen/grid_16"/>
+
+    <TextView
+        android:id="@+id/tv_duying"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_word"
+        android:layout_marginLeft="@dimen/grid_10"
+        android:layout_toRightOf="@+id/tv_word"
+        android:layout_marginRight="@dimen/grid_10"
+        android:singleLine="true"
+        android:text="New Text"
+        android:textColor="@color/text_color_tv2"
+        android:textSize="@dimen/grid_14"/>
+
+    <TextView
+        android:id="@+id/tv_translate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_word"
+        android:layout_marginTop="@dimen/grid_5"
+        android:layout_marginLeft="@dimen/grid_10"
+        android:layout_marginRight="@dimen/grid_10"
+        android:layout_marginBottom="@dimen/grid_10"
+        android:lineSpacingExtra="@dimen/grid_3"
+        android:text="New Text"
+        android:textColor="@color/text_color_tv1"
+        android:textSize="@dimen/grid_14"/>
+    <View
+        style="@style/LineStyle"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
